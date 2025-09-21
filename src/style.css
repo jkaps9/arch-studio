@@ -8,4 +8,41 @@
 
 body {
   font-family: "League Spartan", sans-serif;
+  font-size: 1.125rem;
+  line-height: 133.333%;
+  letter-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+/* UTILITIES */
+.heading-xl {
+  font-size: 15.625rem;
+  line-height: 80%;
+  letter-spacing: -5px;
+}
+
+.heading-lg {
+  font-size: 6rem;
+  line-height: 83.333%;
+  letter-spacing: -2px;
+}
+
+.heading-md {
+  font-size: 4.5rem;
+  line-height: 88.889%;
+  letter-spacing: -2px;
+}
+
+.heading-sm {
+  font-size: 2rem;
+  line-height: 125%;
+  letter-spacing: 0;
 }
