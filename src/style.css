@@ -52,6 +52,10 @@ h6 {
   color: var(--text-header-primary);
 }
 
+img {
+  max-width: 100%;
+}
+
 /* UTILITIES */
 .heading-xl {
   font-size: 15.625rem;
@@ -92,4 +96,10 @@ h6 {
   &:active {
     background-color: var(--button-background-active);
   }
+}
+
+/* HEADER */
+.nav-toggle {
+  background: transparent;
+  border: none;
 }
