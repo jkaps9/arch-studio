@@ -76,3 +76,20 @@ h6 {
   line-height: 125%;
   letter-spacing: 0;
 }
+
+.btn--solid {
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--button-background);
+  color: var(--button-text);
+  padding: 1.3em 1.8em;
+  font-weight: 700;
+
+  &:hover {
+    background-color: var(--button-background-hover);
+  }
+
+  &:active {
+    background-color: var(--button-background-active);
+  }
+}
