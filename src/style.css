@@ -159,6 +159,7 @@ header > .container {
 
 /* HERO */
 .hero {
+  overflow: hidden;
   padding: 6.875rem 0;
   color: var(--white);
   position: relative;
