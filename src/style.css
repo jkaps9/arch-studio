@@ -152,6 +152,7 @@ header > .container {
 
 .nav__item {
   font-weight: 700;
+  cursor: pointer;
 }
 
 /* HERO */
@@ -236,6 +237,10 @@ header > .container {
   .nav__list {
     flex-direction: row;
     gap: 3.8125rem;
+  }
+
+  .nav__item:hover {
+    color: var(--very-dark-blue);
   }
 
   /* HERO */
