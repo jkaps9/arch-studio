@@ -101,6 +101,16 @@ ul {
   &:active {
     background-color: var(--button-background-active);
   }
+
+  .arrow {
+    margin-top: 0.25rem;
+    margin-bottom: -0.25rem;
+    margin-left: 1rem;
+
+    g {
+      stroke: var(--white);
+    }
+  }
 }
 
 .container {
@@ -109,6 +119,32 @@ ul {
   margin: 0 auto;
 
   position: relative;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.35;
+  z-index: 2;
+}
+
+h1,
+h2,
+p,
+a {
+  position: relative;
+  z-index: 3;
 }
 
 /* HEADER */
@@ -168,31 +204,6 @@ header > .container {
     position: static;
   }
 
-  .background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
-
-  .overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    opacity: 0.35;
-    z-index: 2;
-  }
-
-  h1,
-  p,
-  a {
-    position: relative;
-    z-index: 3;
-  }
-
   h1 {
     color: var(--white);
     margin-bottom: 0.25em;
@@ -234,6 +245,23 @@ header > .container {
   position: absolute;
 }
 
+/* Small Team Section */
+
+.small-team {
+  padding: 11.25rem 0;
+  position: relative;
+
+  & > .container {
+    position: static;
+  }
+
+  h2 {
+    margin-bottom: 1.5rem;
+    color: var(--white);
+    max-width: 10ch;
+  }
+}
+
 @media (max-width: 767px) {
   .nav__item {
     color: var(--very-dark-blue);
@@ -246,6 +274,11 @@ header > .container {
 @media (min-width: 48rem) {
   .container {
     width: 75%;
+  }
+
+  .hero > .container,
+  .small-team > .container {
+    position: relative;
   }
 
   /* HEADER */
@@ -282,7 +315,6 @@ header > .container {
 
   .hero > .container {
     padding: 11.4rem clamp(3.625rem, -14.9013rem + 38.5965vw, 11.875rem);
-    position: relative;
 
     p {
       font-weight: 500;
@@ -295,14 +327,6 @@ header > .container {
       visibility: visible;
       height: auto;
       position: relative;
-
-      margin-top: 0.25rem;
-      margin-bottom: -0.25rem;
-      margin-left: 1rem;
-
-      g {
-        stroke: var(--white);
-      }
     }
   }
 
