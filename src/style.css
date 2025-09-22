@@ -646,13 +646,14 @@ footer {
         cursor: pointer;
         font: inherit;
         font-weight: 700;
+
         &.active,
         &:active {
           background-color: var(--number-button-background-active);
           color: var(--white);
         }
 
-        &:hover {
+        &:not(.active):hover {
           background-color: var(--number-button-background-hover);
         }
       }
