@@ -526,6 +526,31 @@ footer {
       }
     }
   }
+
+  /* Footer */
+  footer {
+    margin-top: 0;
+    padding-bottom: 0;
+    background-color: var(--page-background);
+
+    .container {
+      flex-direction: row;
+      justify-content: space-between;
+      .logo {
+        margin: 0;
+      }
+
+      .footer-nav {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 48rem) and (max-width: 1023px) {
+  footer .container {
+    width: 100%;
+  }
 }
 
 @media (min-width: 64rem) {
