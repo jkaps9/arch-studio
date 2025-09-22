@@ -184,6 +184,13 @@ header > .container {
   cursor: pointer;
 }
 
+.nav__item a,
+.footer-nav__item a {
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
+}
+
 /* HERO */
 .hero,
 .small-team {
