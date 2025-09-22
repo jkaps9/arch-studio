@@ -645,6 +645,7 @@ footer {
         text-align: center;
         cursor: pointer;
         font: inherit;
+        font-weight: 700;
         &.active,
         &:active {
           background-color: var(--number-button-background-active);
@@ -653,10 +654,6 @@ footer {
 
         &:hover {
           background-color: var(--number-button-background-hover);
-        }
-
-        p {
-          font-weight: 700;
         }
       }
     }
