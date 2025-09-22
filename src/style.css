@@ -131,6 +131,18 @@ a {
   z-index: 3;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+  min-height: 15rem;
+
+  background-color: rgba(0, 0, 0, 0.35);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
 /* Page Indicator */
 .page-indicator {
   visibility: hidden;
@@ -309,17 +321,6 @@ header > .container {
   }
 
   .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 1.5rem;
-    min-height: 15rem;
-
-    background-color: rgba(0, 0, 0, 0.35);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: overlay;
-
     h3 {
       margin-bottom: 0.25em;
       color: var(--white);
@@ -391,6 +392,12 @@ footer {
         color: var(--very-dark-blue);
       }
     }
+  }
+}
+
+/* Portfolio */
+.portfolio {
+  .card {
   }
 }
 
