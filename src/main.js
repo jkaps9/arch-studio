@@ -1,20 +1,12 @@
 import "./style.css";
+import { initializeNav } from "./scripts/nav";
 
 import paramourDesktopImage from "./assets/home/desktop/image-hero-paramour.jpg";
 import seraphDesktopImage from "./assets/home/desktop/image-hero-seraph.jpg";
 import federalDesktopImage from "./assets/home/desktop/image-hero-federal.jpg";
 import trinityDesktopImage from "./assets/home/desktop/image-hero-trinity.jpg";
 
-addNavToggleOnClick();
-
-function addNavToggleOnClick() {
-  const navToggle = document.querySelector(".nav-toggle");
-  const nav = document.querySelector(".nav");
-
-  navToggle.addEventListener("click", () => {
-    nav.classList.toggle("visible");
-  });
-}
+initializeNav();
 
 function removeActiveFromSlideSwitcher() {
   const slideSwitcher = document.querySelector(".slide-switcher");
