@@ -170,6 +170,13 @@ header > .container {
 
   .btn--solid {
     margin-top: clamp(2.5625rem, 7.6923rem + -10.687vw, 5.1875rem);
+
+    position: relative;
+    .arrow {
+      visibility: hidden;
+      height: 0;
+      position: absolute;
+    }
   }
 }
 
@@ -245,6 +252,22 @@ header > .container {
     p,
     a {
       z-index: 3;
+    }
+  }
+
+  .hero .btn--solid {
+    .arrow {
+      visibility: visible;
+      height: auto;
+      position: relative;
+
+      margin-top: 0.25rem;
+      margin-bottom: -0.25rem;
+      margin-left: 1rem;
+
+      g {
+        stroke: var(--white);
+      }
     }
   }
 }
