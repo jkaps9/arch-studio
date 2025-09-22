@@ -63,7 +63,7 @@ ul {
 
 /* UTILITIES */
 .heading-xl {
-  font-size: 15.625rem;
+  font-size: clamp(7.5rem, -10.7456rem + 38.0117vw, 15.625rem);
   line-height: 80%;
   letter-spacing: -5px;
 }
@@ -211,7 +211,7 @@ header > .container {
 
 /* Welcome Section */
 .welcome {
-  margin: 4.5rem 0;
+  margin: clamp(4.5rem, 3.352rem + 4.898vw, 6.75rem) 0;
 }
 
 .accent-rectangle {
@@ -307,15 +307,24 @@ header > .container {
   }
 
   /* Welcome */
+  .accent-rectangle {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+  }
+
   .welcome > .container {
-    display: flex;
-    flex-direction: row;
+    h2 {
+      max-width: 10ch;
+    }
   }
 
   .welcome__title {
     color: var(--light-grey);
     visibility: visible;
     height: auto;
+    position: relative;
+    font-weight: 500;
   }
 }
 
