@@ -266,6 +266,69 @@ header > .container {
   }
 }
 
+/* Featured Section */
+.featured {
+  margin: clamp(4.5625rem, 0.5128rem + 17.2789vw, 12.5rem) 0;
+
+  h2 {
+    margin-bottom: 2.75rem;
+  }
+
+  .btn--solid {
+    margin-top: 1.5rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.5rem;
+    min-height: 15rem;
+
+    background-color: rgba(0, 0, 0, 0.35);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+
+    h3 {
+      margin-bottom: 0.25em;
+      color: var(--white);
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--white);
+    }
+
+    .number {
+      visibility: hidden;
+      height: 0;
+      position: absolute;
+    }
+
+    &:nth-child(1) {
+      background-image: url("assets/portfolio/mobile/image-del-sol.jpg");
+    }
+
+    &:nth-child(2) {
+      background-image: url("assets/portfolio/mobile/image-228b.jpg");
+    }
+
+    &:nth-child(3) {
+      background-image: url("assets/portfolio/mobile/image-del-sol.jpg");
+    }
+  }
+}
+
 @media (max-width: 767px) {
   .nav__item {
     color: var(--very-dark-blue);
@@ -360,6 +423,34 @@ header > .container {
   .small-team > .container {
     padding: 10.5rem clamp(3.625rem, -14.9013rem + 38.5965vw, 11.875rem);
   }
+
+  /* Featured */
+  .featured {
+    .card {
+      position: relative;
+      .number {
+        visibility: visible;
+        height: auto;
+        top: 1.75rem;
+        right: 2rem;
+        color: var(--white);
+        opacity: 0.5;
+        font-size: 15.625rem;
+        font-weight: 700;
+      }
+      &:nth-child(1) {
+        background-image: url("assets/portfolio/tablet/image-del-sol.jpg");
+      }
+
+      &:nth-child(2) {
+        background-image: url("assets/portfolio/tablet/image-228b.jpg");
+      }
+
+      &:nth-child(3) {
+        background-image: url("assets/portfolio/tablet/image-del-sol.jpg");
+      }
+    }
+  }
 }
 
 @media (min-width: 64rem) {
@@ -398,5 +489,22 @@ header > .container {
     position: relative;
     margin-top: -4.625rem;
     z-index: -1;
+  }
+
+  /* Featured */
+  .featured {
+    .card {
+      &:nth-child(1) {
+        background-image: url("assets/portfolio/desktop/image-del-sol.jpg");
+      }
+
+      &:nth-child(2) {
+        background-image: url("assets/portfolio/desktop/image-228b.jpg");
+      }
+
+      &:nth-child(3) {
+        background-image: url("assets/portfolio/desktop/image-del-sol.jpg");
+      }
+    }
   }
 }
