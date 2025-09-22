@@ -320,16 +320,49 @@ header > .container {
   }
 
   .welcome__title {
-    color: var(--light-grey);
+    color: var(--very-light-grey);
     visibility: visible;
     height: auto;
     position: relative;
-    font-weight: 500;
+    font-weight: 700;
   }
 }
 
 @media (min-width: 64rem) {
   .container {
     width: 85%;
+  }
+
+  .welcome > .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .welcome__title {
+    margin-bottom: -2.25rem;
+  }
+
+  .welcome__text {
+    h2 {
+      margin-bottom: 0.375em;
+    }
+
+    p {
+      max-width: 42ch;
+    }
+  }
+
+  .welcome__content {
+    margin-left: auto;
+    display: flex;
+    gap: 7.8125rem;
+  }
+
+  .welcome img {
+    visibility: visible;
+    height: auto;
+    position: relative;
+    margin-top: -4.625rem;
+    z-index: -1;
   }
 }
