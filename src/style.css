@@ -48,6 +48,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-weight: 700;
   color: var(--text-header-primary);
 }
 
@@ -64,28 +65,24 @@ ul {
   font-size: 15.625rem;
   line-height: 80%;
   letter-spacing: -5px;
-  font-weight: 700;
 }
 
 .heading-lg {
   font-size: 6rem;
   line-height: 83.333%;
   letter-spacing: -2px;
-  font-weight: 700;
 }
 
 .heading-md {
   font-size: 4.5rem;
   line-height: 88.889%;
   letter-spacing: -2px;
-  font-weight: 700;
 }
 
 .heading-sm {
   font-size: 2rem;
   line-height: 125%;
   letter-spacing: 0;
-  font-weight: 700;
 }
 
 .btn--solid {
@@ -153,6 +150,38 @@ header > .container {
 }
 
 .nav__item {
-  color: var(--very-dark-blue);
   font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  .nav__item {
+    color: var(--very-dark-blue);
+    font-size: 2rem;
+    line-height: 125%;
+    letter-spacing: 0;
+  }
+}
+
+@media (min-width: 48rem) {
+  header > .container {
+    justify-content: flex-start;
+    gap: clamp(5rem, 2.8947rem + 4.386vw, 5.9375rem);
+  }
+
+  .nav-toggle {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+  }
+
+  .nav {
+    visibility: visible;
+    height: auto;
+    position: relative;
+  }
+
+  .nav__list {
+    flex-direction: row;
+    gap: 3.8125rem;
+  }
 }
