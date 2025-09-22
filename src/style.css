@@ -13,8 +13,9 @@
   --light-grey: #c8ccd8;
   --very-light-grey: #eeeff4;
   --red: #df5656;
+  --white: #fff;
 
-  --page-background: #fff;
+  --page-background: var(--white);
 
   --text-primary: var(--dark-grey);
   --text-header-primary: var(--very-dark-blue);
@@ -24,7 +25,7 @@
   --input-text-error: var(--red);
 
   --button-background: var(--very-dark-blue);
-  --button-text: #fff;
+  --button-text: var(--white);
 
   --button-background-hover: var(--dark-grey);
   --button-background-active: var(--light-grey);
@@ -68,9 +69,9 @@ ul {
 }
 
 .heading-lg {
-  font-size: 6rem;
+  font-size: clamp(3rem, 1.4694rem + 6.5306vw, 6rem);
   line-height: 83.333%;
-  letter-spacing: -2px;
+  letter-spacing: clamp(-0.125rem, -0.0495rem + -0.1088vw, -0.075rem);
 }
 
 .heading-md {
@@ -183,5 +184,23 @@ header > .container {
   .nav__list {
     flex-direction: row;
     gap: 3.8125rem;
+  }
+}
+
+/* HERO */
+.hero {
+  background-image: url("assets/home/mobile/image-hero-paramour.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding: 6.875rem 0;
+  color: var(--white);
+
+  h1 {
+    color: var(--white);
+    margin-bottom: 0.25em;
+  }
+
+  .btn--solid {
+    margin-top: 5.1875rem;
   }
 }
