@@ -32,6 +32,8 @@
 
   --number-button-background-hover: var(--very-light-grey);
   --number-button-background-active: var(--very-dark-blue);
+
+  --container-max-width: 1110px;
 }
 
 body {
@@ -115,7 +117,7 @@ ul {
 
 .container {
   width: 85%;
-  max-width: 1110px;
+  max-width: var(--container-max-width);
   margin: 0 auto;
 
   position: relative;
@@ -634,6 +636,7 @@ footer {
     .background {
       background-color: var(--very-light-grey);
       width: 60%;
+      max-width: calc(1440px * 0.6);
       height: 100%;
       z-index: -1;
       right: 0;
