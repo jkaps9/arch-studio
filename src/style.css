@@ -8,11 +8,11 @@
 
 :root {
   --very-dark-blue: #1b1d23;
-  --dark-grey: #60636c;
-  --medium-grey: #7f8490;
-  --light-grey: #c9cdd9;
-  --very-light-grey: #f0f0f5;
-  --red: #df5858;
+  --dark-grey: #60636d;
+  --medium-grey: #7d828f;
+  --light-grey: #c8ccd8;
+  --very-light-grey: #eeeff4;
+  --red: #df5656;
 
   --page-background: #fff;
 
@@ -54,6 +54,10 @@ h6 {
 
 img {
   max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
 }
 
 /* UTILITIES */
@@ -110,9 +114,28 @@ img {
   border: none;
 }
 
+header {
+  position: relative;
+}
+
 header > .container {
   padding: clamp(2rem, 1.2347rem + 3.2653vw, 3.5rem) 0; /*32px - 56px*/
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.nav {
+  visibility: hidden;
+  height: 0;
+  position: absolute;
+}
+
+.nav.visible {
+  visibility: visible;
+  height: auto;
+  top: 100%;
+  background-color: var(--very-light-grey);
+  width: 91.5%;
+  padding: 2.5rem 3rem;
 }
