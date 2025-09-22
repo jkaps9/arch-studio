@@ -638,12 +638,13 @@ footer {
       .slide-indicator {
         color: var(--medium-grey);
         background-color: var(--white);
+        border: none;
         height: 80px;
         width: 80px;
         place-content: center;
         text-align: center;
         cursor: pointer;
-
+        font: inherit;
         &.active,
         &:active {
           background-color: var(--number-button-background-active);

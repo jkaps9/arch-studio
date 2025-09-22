@@ -11,8 +11,6 @@ function addNavToggleOnClick() {
   });
 }
 
-removeActiveFromSlideSwitcher();
-
 function removeActiveFromSlideSwitcher() {
   const slideSwitcher = document.querySelector(".slide-switcher");
   const slideIndicators = slideSwitcher.querySelectorAll(".slide-indicator");
