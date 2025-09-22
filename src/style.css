@@ -338,6 +338,11 @@ header > .container {
 /* Footer */
 footer {
   background-color: var(--very-light-grey);
+  --logo-margin: 8rem;
+  --margin-top-calc: calc(
+    clamp(4.5625rem, 0.5128rem + 17.2789vw, 12.5rem) + var(--logo-margin)
+  );
+  margin-top: var(--margin-top-calc);
   padding-bottom: 6.125rem;
 
   .container {
@@ -346,7 +351,7 @@ footer {
     align-items: center;
 
     .logo {
-      margin-top: -2rem;
+      margin-top: calc(var(--logo-margin) * -1);
       margin-bottom: 2rem;
       background-color: var(--very-dark-blue);
       width: auto;
@@ -362,6 +367,14 @@ footer {
 
     .nav__list {
       gap: 2rem;
+    }
+
+    .footer-nav__item {
+      font-weight: 700;
+      cursor: pointer;
+      &:hover {
+        color: var(--very-dark-blue);
+      }
     }
   }
 }
