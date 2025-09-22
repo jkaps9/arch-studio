@@ -163,6 +163,10 @@ header > .container {
   color: var(--white);
   position: relative;
 
+  & > .container {
+    position: static;
+  }
+
   .background {
     position: absolute;
     top: 0;
