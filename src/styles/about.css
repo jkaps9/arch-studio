@@ -1,5 +1,9 @@
 /* About Us */
-
+.about-main {
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+}
 /* HERO */
 .about-hero {
   .mobile-image {
@@ -28,7 +32,6 @@
   }
 
   h2 {
-    margin-bottom: 1.5rem;
     line-height: 108%;
   }
 }
