@@ -131,6 +131,13 @@ a {
   z-index: 3;
 }
 
+/* Page Indicator */
+.page-indicator {
+  visibility: hidden;
+  height: 0;
+  position: absolute;
+}
+
 /* HEADER */
 .nav-toggle {
   background: transparent;
@@ -391,6 +398,30 @@ footer {
   .hero > .container,
   .small-team > .container {
     position: relative;
+  }
+
+  /* Page Indicator */
+  .page-indicator {
+    visibility: visible;
+    height: auto;
+    top: 7.75rem;
+    left: -11%;
+    rotate: 90deg;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    .shape {
+      width: 6.5rem;
+      height: 1px;
+      position: relative;
+      border-bottom: 1px solid var(--light-grey);
+    }
+
+    .page-title {
+      color: var(--light-grey);
+      letter-spacing: 1.125rem;
+    }
   }
 
   /* HEADER */
