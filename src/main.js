@@ -34,7 +34,6 @@ function addSlideIndicatorOnClick() {
 }
 
 function switchSlide(slideNumber) {
-  console.log(slideNumber);
   const slides = [
     {
       title: "Project Paramour",
