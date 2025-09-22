@@ -404,8 +404,8 @@ footer {
   .page-indicator {
     visibility: visible;
     height: auto;
-    top: 7.75rem;
-    left: -11%;
+    left: -225px;
+    bottom: 0;
     rotate: 90deg;
     display: flex;
     align-items: center;
