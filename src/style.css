@@ -156,11 +156,34 @@ header > .container {
 
 /* HERO */
 .hero {
-  background-image: url("assets/home/mobile/image-hero-paramour.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
   padding: 6.875rem 0;
   color: var(--white);
+  position: relative;
+
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.35;
+    z-index: 2;
+  }
+
+  h1,
+  p,
+  a {
+    position: relative;
+    z-index: 3;
+  }
 
   h1 {
     color: var(--white);
@@ -170,8 +193,6 @@ header > .container {
 
   .btn--solid {
     margin-top: clamp(2.5625rem, 7.6923rem + -10.687vw, 5.1875rem);
-
-    position: relative;
     .arrow {
       visibility: hidden;
       height: 0;
@@ -219,40 +240,16 @@ header > .container {
 
   /* HERO */
   .hero {
-    background-image: none;
     padding: 0;
   }
 
   .hero > .container {
-    background-image: url("assets/home/tablet/image-hero-paramour.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
     padding: 11.4rem clamp(3.625rem, -14.9013rem + 38.5965vw, 11.875rem);
     position: relative;
 
     p {
       font-weight: 500;
       max-width: 44ch;
-    }
-
-    .overlay {
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #000;
-      opacity: 0.35;
-      z-index: 1;
-    }
-
-    h1,
-    p,
-    a {
-      position: relative;
-      z-index: 3;
     }
   }
 
@@ -276,10 +273,5 @@ header > .container {
 @media (min-width: 64rem) {
   .container {
     width: 85%;
-  }
-
-  .hero > .container {
-    background-image: url("assets/home/desktop/image-hero-paramour.jpg");
-    background-size: contain;
   }
 }
