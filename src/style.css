@@ -260,6 +260,11 @@ header > .container {
 /* Small Team Section */
 
 .small-team {
+  background-image: url("src/assets/home/mobile/image-small-team.jpg");
+  background-color: rgba(0, 0, 0, 0.35);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
   padding: 11.25rem 0;
   position: relative;
 
@@ -488,8 +493,17 @@ footer {
   }
 
   /* Small Team */
-  .small-team > .container {
-    padding: 10.5rem clamp(3.625rem, -14.9013rem + 38.5965vw, 11.875rem);
+  .small-team {
+    background-image: none;
+    background-color: transparent;
+    .container {
+      background-image: url("src/assets/home/tablet/image-small-team.jpg");
+      background-color: rgba(0, 0, 0, 0.35);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-blend-mode: overlay;
+      padding: 10.5rem clamp(3.625rem, -14.9013rem + 38.5965vw, 11.875rem);
+    }
   }
 
   /* Featured */
@@ -589,6 +603,10 @@ footer {
 
   .hero > .container {
     background-image: url("src/assets/home/desktop/image-hero-paramour.jpg");
+  }
+
+  .small-team > .container {
+    background-image: url("src/assets/home/desktop/image-small-team.jpg");
   }
 
   .welcome > .container {
