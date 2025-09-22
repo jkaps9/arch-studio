@@ -309,7 +309,8 @@ header > .container {
   }
 
   /* HERO */
-  .hero {
+  .hero,
+  .small-team {
     padding: 0;
   }
 
@@ -349,6 +350,11 @@ header > .container {
     height: auto;
     position: relative;
     font-weight: 700;
+  }
+
+  /* Small Team */
+  .small-team > .container {
+    padding: 10.5rem clamp(3.625rem, -14.9013rem + 38.5965vw, 11.875rem);
   }
 }
 
