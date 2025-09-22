@@ -1,0 +1,50 @@
+/* About Us */
+
+/* HERO */
+.about-hero {
+  .mobile-image {
+    min-height: 15rem;
+    width: 100%;
+    background-image: url("../assets/about/mobile/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.35);
+    background-size: cover;
+    background-blend-mode: overlay;
+  }
+
+  h1 {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+  }
+
+  .content {
+    position: relative;
+    margin-top: -10%;
+    margin-left: -10%;
+    margin-bottom: 10%;
+    background-color: var(--page-background);
+    padding: 4rem 0 0 2rem;
+  }
+
+  h2 {
+    margin-bottom: 1.5rem;
+    line-height: 108%;
+  }
+}
+
+@media (min-width: 48rem) {
+  /* HERO */
+  .about-hero {
+    .mobile-image {
+      min-height: 0;
+    }
+  }
+
+  /* HERITAGE */
+  .heritage {
+    .container {
+      display: flex;
+    }
+  }
+}
