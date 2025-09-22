@@ -115,6 +115,7 @@ ul {
 .nav-toggle {
   background: transparent;
   border: none;
+  cursor: pointer;
 }
 
 header {
@@ -138,9 +139,11 @@ header > .container {
   visibility: visible;
   height: auto;
   top: 100%;
+  right: 0;
   background-color: var(--very-light-grey);
   width: 91.5%;
   padding: 2.5rem 3rem;
+  z-index: 1000;
 }
 
 .nav__list {
