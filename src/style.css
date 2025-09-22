@@ -335,6 +335,37 @@ header > .container {
   }
 }
 
+/* Footer */
+footer {
+  background-color: var(--very-light-grey);
+  padding-bottom: 6.125rem;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .logo {
+      margin-top: -2rem;
+      margin-bottom: 2rem;
+      background-color: var(--very-dark-blue);
+      width: auto;
+      padding: 3rem 2rem;
+      path {
+        fill: var(--white);
+      }
+    }
+
+    .footer-nav {
+      margin-bottom: 2rem;
+    }
+
+    .nav__list {
+      gap: 2rem;
+    }
+  }
+}
+
 @media (max-width: 767px) {
   .nav__item {
     color: var(--very-dark-blue);
