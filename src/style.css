@@ -531,7 +531,7 @@ footer {
   footer {
     margin-top: 0;
     padding-bottom: 0;
-    background-color: var(--page-background);
+    background-color: transparent;
 
     .container {
       flex-direction: row;
@@ -548,8 +548,19 @@ footer {
 }
 
 @media (min-width: 48rem) and (max-width: 1023px) {
-  footer .container {
-    width: 100%;
+  footer {
+    position: relative;
+
+    .background {
+      background-color: var(--very-light-grey);
+      width: 80%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    .container {
+      width: 100%;
+    }
   }
 }
 
@@ -613,6 +624,20 @@ footer {
       &:nth-child(3) {
         background-image: url("assets/portfolio/desktop/image-del-sol.jpg");
       }
+    }
+  }
+
+  /* Footer */
+  footer {
+    position: relative;
+
+    .background {
+      background-color: var(--very-light-grey);
+      width: 60%;
+      height: 100%;
+      z-index: -1;
+      right: 0;
+      margin: 0 auto;
     }
   }
 }
