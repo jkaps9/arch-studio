@@ -220,6 +220,7 @@ header > .container {
   /* HERO */
   .hero {
     background-image: none;
+    padding: 0;
   }
 
   .hero > .container {
@@ -228,7 +229,6 @@ header > .container {
     background-size: contain;
     padding: 11.4rem clamp(3.625rem, -14.9013rem + 38.5965vw, 11.875rem);
     position: relative;
-    z-index: 1;
 
     p {
       font-weight: 500;
@@ -245,12 +245,13 @@ header > .container {
       height: 100%;
       background-color: #000;
       opacity: 0.35;
-      z-index: 2;
+      z-index: 1;
     }
 
     h1,
     p,
     a {
+      position: relative;
       z-index: 3;
     }
   }
