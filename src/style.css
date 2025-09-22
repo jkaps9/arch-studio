@@ -330,7 +330,7 @@ header > .container {
     }
 
     &:nth-child(3) {
-      background-image: url("assets/portfolio/mobile/image-del-sol.jpg");
+      background-image: url("assets/portfolio/mobile/image-prototype.jpg");
     }
   }
 }
@@ -522,7 +522,7 @@ footer {
       }
 
       &:nth-child(3) {
-        background-image: url("assets/portfolio/tablet/image-del-sol.jpg");
+        background-image: url("assets/portfolio/tablet/image-prototype.jpg");
       }
     }
   }
@@ -622,7 +622,7 @@ footer {
       }
 
       &:nth-child(3) {
-        background-image: url("assets/portfolio/desktop/image-del-sol.jpg");
+        background-image: url("assets/portfolio/desktop/image-prototype.jpg");
       }
     }
   }
