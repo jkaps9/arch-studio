@@ -219,6 +219,12 @@ header > .container {
       position: absolute;
     }
   }
+
+  .slide-switcher {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+  }
 }
 
 /* Welcome Section */
@@ -617,8 +623,42 @@ footer {
     width: 85%;
   }
 
-  .hero > .container {
-    background-image: url("src/assets/home/desktop/image-hero-paramour.jpg");
+  .hero {
+    .container {
+      background-image: url("src/assets/home/desktop/image-hero-paramour.jpg");
+    }
+    .slide-switcher {
+      visibility: visible;
+      height: auto;
+      bottom: 0;
+      left: -80px;
+
+      display: flex;
+
+      .slide-indicator {
+        color: var(--medium-grey);
+        background-color: var(--white);
+        height: 80px;
+        width: 80px;
+        place-content: center;
+        text-align: center;
+        cursor: pointer;
+
+        &.active,
+        &:active {
+          background-color: var(--number-button-background-active);
+          color: var(--white);
+        }
+
+        &:hover {
+          background-color: var(--number-button-background-hover);
+        }
+
+        p {
+          font-weight: 700;
+        }
+      }
+    }
   }
 
   .small-team > .container {
