@@ -98,8 +98,21 @@ img {
   }
 }
 
+.container {
+  width: 85%;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
 /* HEADER */
 .nav-toggle {
   background: transparent;
   border: none;
+}
+
+header > .container {
+  padding: clamp(2rem, 1.2347rem + 3.2653vw, 3.5rem) 0; /*32px - 56px*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
