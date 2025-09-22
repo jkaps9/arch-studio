@@ -30,14 +30,16 @@ addSlideIndicatorOnClick();
 function addSlideIndicatorOnClick() {
   const slideIDs = ["slide-one", "slide-two", "slide-three", "slide-four"];
   const slideSwitcher = document.querySelector(".slide-switcher");
-  const slideIndicators = slideSwitcher.querySelectorAll(".slide-indicator");
-  slideIndicators.forEach((element) => {
-    element.addEventListener("click", (slideIndicator) => {
-      removeActiveFromSlideSwitcher();
-      slideIndicator.target.classList.add("active");
-      switchSlide(slideIDs.indexOf(slideIndicator.target.id));
+  if (slideSwitcher) {
+    const slideIndicators = slideSwitcher.querySelectorAll(".slide-indicator");
+    slideIndicators.forEach((element) => {
+      element.addEventListener("click", (slideIndicator) => {
+        removeActiveFromSlideSwitcher();
+        slideIndicator.target.classList.add("active");
+        switchSlide(slideIDs.indexOf(slideIndicator.target.id));
+      });
     });
-  });
+  }
 }
 
 function switchSlide(slideNumber) {
