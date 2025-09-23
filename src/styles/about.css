@@ -40,6 +40,10 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+
+    p {
+      font-weight: 500;
+    }
   }
 }
 
@@ -85,7 +89,17 @@
   /* HERITAGE */
   .heritage {
     .container {
-      display: flex;
+      display: grid;
+      grid-template-columns: 1fr 33.75rem;
+      align-items: center;
+      gap: 7.75rem;
+    }
+
+    .heritage-image {
+      min-height: 35.5rem;
+      background-image: url("../assets/about/desktop/image-heritage.jpg");
+      background-repeat: no-repeat;
+      background-size: contain;
     }
   }
 
