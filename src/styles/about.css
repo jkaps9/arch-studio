@@ -33,8 +33,15 @@
 
 /* HERITAGE */
 .heritage {
-  margin-top: clamp(4.75rem, -2.645rem + 31.5522vw, 12.5rem);
-  margin-bottom: clamp(7rem, 1.7519rem + 22.3919vw, 12.5rem);
+  padding-top: clamp(4.75rem, -2.645rem + 31.5522vw, 12.5rem);
+  padding-bottom: clamp(7rem, 1.7519rem + 22.3919vw, 12.5rem);
+
+  .accent-rectangle {
+    position: absolute;
+    top: -10%;
+    left: 0;
+    margin-bottom: 0;
+  }
 
   .content {
     display: flex;
@@ -71,6 +78,11 @@
     }
   }
   .heritage {
+    .accent-rectangle {
+      visibility: visible;
+      height: auto;
+    }
+
     h2 {
       margin-bottom: 2.375rem;
     }
@@ -88,6 +100,9 @@
 @media (min-width: 64rem) {
   /* HERITAGE */
   .heritage {
+    .accent-rectangle {
+      top: 0;
+    }
     .container {
       display: grid;
       grid-template-columns: 1fr 33.75rem;
