@@ -241,6 +241,10 @@ header > .container {
 
   & > .container {
     position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 
   h1 {
@@ -251,11 +255,6 @@ header > .container {
 
   .btn--solid {
     margin-top: clamp(2.5625rem, 7.6923rem + -10.687vw, 5.1875rem);
-    .arrow {
-      visibility: hidden;
-      height: 0;
-      position: absolute;
-    }
   }
 
   .slide-switcher {
@@ -669,6 +668,7 @@ footer {
   .hero {
     .container {
       background-image: url("src/assets/home/desktop/image-hero-paramour.jpg");
+      height: 46rem;
     }
     .slide-switcher {
       visibility: visible;
@@ -700,6 +700,14 @@ footer {
           background-color: var(--number-button-background-hover);
         }
       }
+    }
+
+    h1 {
+      margin-bottom: 0;
+    }
+
+    .btn--solid {
+      margin-top: 0;
     }
   }
 
