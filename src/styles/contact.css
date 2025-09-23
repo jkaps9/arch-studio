@@ -60,6 +60,7 @@
   .btn--solid {
     border: none;
     display: flex;
+    cursor: pointer;
 
     svg g {
       stroke: var(--white);
@@ -80,6 +81,11 @@
       width: 100%;
     }
 
+    label {
+      width: 100%;
+      position: relative;
+    }
+
     input,
     textarea {
       width: 100%;
@@ -91,6 +97,17 @@
       font-weight: 700;
       line-height: 1em;
       color: inherit;
+      cursor: pointer;
+
+      & + .error-text {
+        position: absolute;
+        bottom: 0.5rem;
+        right: 0;
+        cursor: pointer;
+
+        visibility: hidden;
+        height: 0;
+      }
 
       &::placeholder {
         color: var(--light-grey);
@@ -106,11 +123,30 @@
       &:user-invalid {
         color: var(--input-text-error);
         border-color: var(--input-text-error);
+
+        & + .error-text {
+          visibility: visible;
+          height: auto;
+          color: var(--input-text-error);
+          font-weight: 700;
+          line-height: 1em;
+        }
+      }
+
+      &:user-invalid::placeholder {
+        color: var(--input-text-error);
+        opacity: 0.5;
       }
     }
 
     textarea {
       min-height: 4lh;
+      resize: none;
+      field-sizing: content;
+
+      & + .error-text {
+        bottom: 1rem;
+      }
     }
   }
 }

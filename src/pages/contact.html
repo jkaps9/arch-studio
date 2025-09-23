@@ -156,28 +156,36 @@
 
         <form action="" class="contact-form">
           <div class="inputs">
-            <input
-              type="text"
-              placeholder="Name"
-              name="name"
-              id="name"
-              required
-            />
+            <label for="name">
+              <input
+                type="text"
+                placeholder="Name"
+                name="name"
+                id="name"
+                required
+              />
+              <div class="error-text">Can't be empty</div>
+            </label>
+            <label for="email">
+              <input
+                type="email"
+                placeholder="Email"
+                name="email"
+                id="email"
+                required
+              />
+              <div class="error-text">Can't be empty</div>
+            </label>
 
-            <input
-              type="email"
-              placeholder="Email"
-              name="email"
-              id="email"
-              required
-            />
-
-            <textarea
-              name="message"
-              id="message"
-              placeholder="Message"
-              required
-            ></textarea>
+            <label for="message">
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Message"
+                required
+              ></textarea>
+              <div class="error-text">Can't be empty</div>
+            </label>
           </div>
           <button class="btn--solid">
             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20">
