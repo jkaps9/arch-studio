@@ -227,4 +227,11 @@
       margin-bottom: 0;
     }
   }
+
+  .map {
+    .map-image {
+      background-image: url("../assets/contact/desktop/image-map.png");
+      min-height: 35rem;
+    }
+  }
 }
