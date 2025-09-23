@@ -95,7 +95,6 @@ a {
 
 .btn--solid {
   display: inline-block;
-  text-decoration: none;
   background-color: var(--button-background);
   color: var(--button-text);
   padding: 1.3em 1.8em;
@@ -219,7 +218,6 @@ header > .container {
 
 .nav__item a,
 .footer-nav__item a {
-  text-decoration: none;
   font: inherit;
   color: inherit;
 }
