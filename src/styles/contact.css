@@ -143,10 +143,7 @@
       min-height: 4lh;
       resize: none;
       field-sizing: content;
-
-      & + .error-text {
-        bottom: 1rem;
-      }
+      margin-bottom: -1rem;
     }
   }
 }
