@@ -66,11 +66,9 @@
       min-height: 0;
     }
   }
-
-  /* HERITAGE */
   .heritage {
-    .container {
-      display: flex;
+    h2 {
+      margin-bottom: 2.375rem;
     }
   }
 
@@ -84,6 +82,14 @@
 }
 
 @media (min-width: 64rem) {
+  /* HERITAGE */
+  .heritage {
+    .container {
+      display: flex;
+    }
+  }
+
+  /* LEADERS */
   .leaders {
     .container {
       display: flex;
