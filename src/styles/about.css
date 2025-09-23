@@ -76,11 +76,48 @@
     .mobile-image {
       min-height: 0;
     }
+
+    .big-screen-image {
+      min-height: 45rem;
+      background-image: url("../assets/about/tablet/image-hero.jpg");
+      background-repeat: no-repeat;
+      background-color: rgba(0, 0, 0, 0.35);
+      background-size: cover;
+      background-blend-mode: overlay;
+    }
+
+    h1 {
+      visibility: visible;
+      height: auto;
+      top: 33%;
+      right: 2%;
+      color: var(--very-light-grey);
+    }
+
+    .content {
+      position: absolute;
+      bottom: 0;
+      right: -5%;
+      max-width: 35.75rem;
+      padding: 10rem 3.5rem 0.125rem;
+      margin-bottom: 0;
+
+      .accent-rectangle {
+        visibility: visible;
+        position: absolute;
+        top: 5.5rem;
+        left: 3.5rem;
+        margin-bottom: 0;
+      }
+
+      p {
+        font-weight: 400;
+      }
+    }
   }
   .heritage {
     .accent-rectangle {
       visibility: visible;
-      height: auto;
     }
 
     h2 {
@@ -98,6 +135,12 @@
 }
 
 @media (min-width: 64rem) {
+  /* HERO */
+  .about-hero {
+    .mobile-image {
+      min-height: 0;
+    }
+  }
   /* HERITAGE */
   .heritage {
     .accent-rectangle {
