@@ -63,6 +63,11 @@ ul {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* UTILITIES */
 .heading-xl {
   font-size: clamp(7.5rem, -10.7456rem + 38.0117vw, 15.625rem);
