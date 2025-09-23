@@ -4,6 +4,26 @@
   }
 }
 
+.contact-details {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  h2 {
+    margin-bottom: 2.5rem;
+  }
+
+  p.bold {
+    margin-bottom: 1em;
+  }
+
+  .btn--solid {
+    padding-left: 0;
+  }
+}
+
 @media (min-width: 48rem) {
   /* HERO */
   .contact-hero .big-screen-image {
