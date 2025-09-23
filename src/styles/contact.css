@@ -5,6 +5,16 @@
 }
 
 .contact-details {
+  padding-top: clamp(4.75rem, -2.645rem + 31.5522vw, 12.5rem);
+  padding-bottom: clamp(7rem, 1.7519rem + 22.3919vw, 12.5rem);
+
+  .accent-rectangle {
+    position: absolute;
+    top: -10%;
+    left: 0;
+    margin-bottom: 0;
+  }
+
   .container {
     display: flex;
     flex-direction: column;
@@ -29,11 +39,43 @@
   .contact-hero .big-screen-image {
     background-image: url("../assets/contact/tablet/image-hero.jpg");
   }
+
+  /* Contact Details */
+  .contact-details {
+    .accent-rectangle {
+      visibility: visible;
+    }
+
+    h2 {
+      margin-bottom: 2.375rem;
+    }
+
+    .office-details {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
 }
 
 @media (min-width: 64rem) {
   /* HERO */
   .contact-hero .big-screen-image {
     background-image: url("../assets/contact/desktop/image-hero.jpg");
+  }
+
+  /* Contact Details */
+  .contact-details {
+    .accent-rectangle {
+      top: -4.5rem;
+    }
+    .container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .office-details {
+      display: block;
+    }
   }
 }
