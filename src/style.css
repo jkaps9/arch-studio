@@ -115,6 +115,21 @@ ul {
   }
 }
 
+.btn--inverted {
+  color: var(--button-background);
+  background-color: var(--button-text);
+
+  .arrow {
+    g {
+      stroke: var(--button-background);
+    }
+  }
+}
+
+p.bold {
+  font-weight: 700;
+}
+
 .container {
   width: 85%;
   max-width: var(--container-max-width);
