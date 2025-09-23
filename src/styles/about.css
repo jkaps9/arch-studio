@@ -1,9 +1,13 @@
 /* HERO */
-.about-hero {
+.about-hero .mobile-image {
+  background-image: url("../assets/about/mobile/image-hero.jpg");
+}
+
+.about-hero,
+.contact-hero {
   .mobile-image {
     min-height: 15rem;
     width: 100%;
-    background-image: url("../assets/about/mobile/image-hero.jpg");
     background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, 0.35);
     background-size: cover;
@@ -23,6 +27,12 @@
     margin-bottom: 10%;
     background-color: var(--page-background);
     padding: 4rem 0 0 2rem;
+
+    .accent-rectangle {
+      visibility: hidden;
+      height: 0;
+      position: absolute;
+    }
   }
 
   h2 {
@@ -72,14 +82,19 @@
 
 @media (min-width: 48rem) {
   /* HERO */
-  .about-hero {
+  .about-hero .big-screen-image {
+    background-image: url("../assets/about/tablet/image-hero.jpg");
+  }
+
+  .about-hero,
+  .contact-hero {
     .mobile-image {
       min-height: 0;
     }
 
     .big-screen-image {
       min-height: 45rem;
-      background-image: url("../assets/about/tablet/image-hero.jpg");
+
       background-repeat: no-repeat;
       background-color: rgba(0, 0, 0, 0.35);
       background-size: cover;
@@ -137,7 +152,12 @@
 
 @media (min-width: 64rem) {
   /* HERO */
-  .about-hero {
+  .about-hero .big-screen-image {
+    background-image: url("../assets/about/desktop/image-hero.jpg");
+  }
+
+  .about-hero,
+  .contact-hero {
     .mobile-image {
       min-height: 0;
     }
@@ -145,7 +165,6 @@
     .big-screen-image {
       min-height: 45rem;
       width: 39.75rem;
-      background-image: url("../assets/about/desktop/image-hero.jpg");
     }
 
     h1 {
