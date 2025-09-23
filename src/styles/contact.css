@@ -54,6 +54,7 @@
 
   h2 {
     margin-bottom: 2.5rem;
+    max-width: 5ch;
   }
 
   .btn--solid {
@@ -88,6 +89,7 @@
       font: inherit;
       font-size: 1.25rem;
       font-weight: 700;
+      line-height: 1em;
       color: inherit;
 
       &::placeholder {
@@ -100,6 +102,10 @@
         outline: none;
         border-width: 3px;
       }
+    }
+
+    textarea {
+      min-height: 4lh;
     }
   }
 }
@@ -137,6 +143,12 @@
       min-height: 35rem;
     }
   }
+
+  .connect {
+    h2 {
+      max-width: none;
+    }
+  }
 }
 
 @media (min-width: 64rem) {
@@ -157,6 +169,21 @@
 
     .office-details {
       display: block;
+    }
+  }
+
+  .connect {
+    .container {
+      display: flex;
+      gap: 10rem;
+    }
+
+    .contact-form {
+      flex-grow: 1;
+    }
+    h2 {
+      max-width: 5ch;
+      margin-bottom: 0;
     }
   }
 }
