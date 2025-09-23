@@ -102,6 +102,11 @@
         outline: none;
         border-width: 3px;
       }
+
+      &:user-invalid {
+        color: var(--input-text-error);
+        border-color: var(--input-text-error);
+      }
     }
 
     textarea {
