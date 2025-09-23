@@ -89,9 +89,10 @@
     h1 {
       visibility: visible;
       height: auto;
-      top: 33%;
+      top: 12.5rem;
       right: 2%;
       color: var(--very-light-grey);
+      line-height: 140%;
     }
 
     .content {
@@ -139,6 +140,31 @@
   .about-hero {
     .mobile-image {
       min-height: 0;
+    }
+
+    .big-screen-image {
+      min-height: 45rem;
+      width: 39.75rem;
+      background-image: url("../assets/about/desktop/image-hero.jpg");
+    }
+
+    h1 {
+      top: 7rem;
+      right: -4%;
+      line-height: 80%;
+    }
+
+    .content {
+      right: 0;
+      padding-left: 11.375rem;
+      padding-right: 0;
+      padding-top: 13.625rem;
+      max-width: 39.25rem;
+
+      .accent-rectangle {
+        left: 11.375rem;
+        top: 10rem;
+      }
     }
   }
   /* HERITAGE */
