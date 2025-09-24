@@ -436,9 +436,11 @@ footer {
   .page-indicator {
     visibility: visible;
     height: auto;
-    left: -225px;
-    bottom: 0;
+    top: 0;
+    left: -10rem;
+    transform: translate(30%, 100%);
     rotate: 90deg;
+
     display: flex;
     align-items: center;
     gap: 3rem;
@@ -446,7 +448,6 @@ footer {
     .shape {
       width: 6.5rem;
       height: 1px;
-      position: relative;
       border-bottom: 1px solid var(--light-grey);
     }
 
