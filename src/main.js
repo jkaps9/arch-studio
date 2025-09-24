@@ -1,4 +1,7 @@
 import "./style.css";
+import "../src/styles/portfolio.css";
+import "../src/styles/about.css";
+import "../src/styles/contact.css";
 import { initializeNav } from "./scripts/nav";
 
 import paramourDesktopImage from "./assets/home/desktop/image-hero-paramour.jpg";
