@@ -233,7 +233,7 @@ header > .container {
   color: var(--white);
   position: relative;
 
-  background-image: url("src/assets/home/mobile/image-hero-paramour.jpg");
+  background-image: url("./assets/home/mobile/image-hero-paramour.jpg");
   background-color: rgba(0, 0, 0, 0.35);
   background-repeat: no-repeat;
   background-size: cover;
@@ -292,7 +292,7 @@ header > .container {
 /* Small Team Section */
 
 .small-team {
-  background-image: url("src/assets/home/mobile/image-small-team.jpg");
+  background-image: url("./assets/home/mobile/image-small-team.jpg");
   background-color: rgba(0, 0, 0, 0.35);
   background-repeat: no-repeat;
   background-size: cover;
@@ -511,7 +511,7 @@ footer {
     background-color: transparent;
 
     .container {
-      background-image: url("src/assets/home/tablet/image-hero-paramour.jpg");
+      background-image: url("./assets/home/tablet/image-hero-paramour.jpg");
       background-color: rgba(0, 0, 0, 0.35);
       background-repeat: no-repeat;
       background-size: cover;
@@ -559,7 +559,7 @@ footer {
     background-image: none;
     background-color: transparent;
     .container {
-      background-image: url("src/assets/home/tablet/image-small-team.jpg");
+      background-image: url("./assets/home/tablet/image-small-team.jpg");
       background-color: rgba(0, 0, 0, 0.35);
       background-repeat: no-repeat;
       background-size: cover;
@@ -668,7 +668,7 @@ footer {
 
   .hero {
     .container {
-      background-image: url("src/assets/home/desktop/image-hero-paramour.jpg");
+      background-image: url("./assets/home/desktop/image-hero-paramour.jpg");
       height: 46rem;
     }
     .slide-switcher {
@@ -713,7 +713,7 @@ footer {
   }
 
   .small-team > .container {
-    background-image: url("src/assets/home/desktop/image-small-team.jpg");
+    background-image: url("./assets/home/desktop/image-small-team.jpg");
   }
 
   .welcome > .container {
