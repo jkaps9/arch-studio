@@ -436,9 +436,10 @@ footer {
   .page-indicator {
     visibility: visible;
     height: auto;
+    min-width: 28rem;
     top: 0;
-    left: -10rem;
-    transform: translate(30%, 100%);
+    left: -18rem;
+    transform: translate(47%, 100%);
     rotate: 90deg;
 
     display: flex;
